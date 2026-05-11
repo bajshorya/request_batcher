@@ -1,0 +1,20 @@
+[package]
+name = "request-batcher"
+version = "0.1.0"
+edition = "2021"
+authors = ["Your Name <your.email@example.com>"]
+description = "A generic async request batching library for Rust with time-window and size-based triggers"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/yourusername/request-batcher"
+keywords = ["async", "batching", "rate-limiting", "performance", "tokio"]
+categories = ["asynchronous", "network-programming"]
+
+[dependencies]
+tokio = { version = "1.46", features = ["sync", "time", "rt"] }
+futures = "0.3"
+thiserror = "2.0"
+async-trait = "0.1"
+
+[dev-dependencies]
+tokio = { version = "1.46", features = ["full", "test-util"] }
+futures = "0.3"
